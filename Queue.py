@@ -3,6 +3,7 @@ class Queue():
         self.queue = []
         self.tail = -1
         self.head = 0
+        
     def enqueue(self):
         data_element = input("Enter EnQueue :")
         if not data_element.strip():
