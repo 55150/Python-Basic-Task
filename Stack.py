@@ -13,7 +13,6 @@ class Stack():
             self.top += 1
             self.stack += [data_element]
             print(f" {data_element} Push To Stack")
-
         else:
             print(" Error : Stack Is Full")
             
