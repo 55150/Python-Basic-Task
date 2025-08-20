@@ -41,7 +41,6 @@ def binarySerch(data,Target):
                 else:
                     index = mid
                     break
-            
             break
         else:
             print(" Error : Invalid Choice ")
@@ -51,14 +50,14 @@ def binarySerch(data,Target):
         print(f" Your Target Value {Target} Index is {index}")
 
 print("--------Binary Search-------")
-data = [50,20,70,40,30,10,60,80]
+data = [50,20,70,40,-1,30,10,5.5,60,80]
 while True:
-    Target = input("Enter Your Find Element :")
-    if not Target.isdigit():
-        print('Please Enter Digit Only')
-        continue
-    else:
-        Target = int(Target)
+    Target = input("Enter Your Target Value : ")
+
+    try:
+        Target = float(Target)
         break
+    except ValueError:
+        print("Invalid input! Please enter a valid integer or float.")
 binarySerch(data,Target)
 
