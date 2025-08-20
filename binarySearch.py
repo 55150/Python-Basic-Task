@@ -1,4 +1,4 @@
-def binarySerch(data,Target):
+def binarySearch(data,Target):
     #Bubble Sort
     while True:
         choice = input("select your choice into Below Option \n (1) Ascending \n (2) Descending\nPlease Enter Your Choice :")
@@ -59,5 +59,5 @@ while True:
         break
     except ValueError:
         print("Invalid input! Please enter a valid integer or float.")
-binarySerch(data,Target)
+binarySearch(data,Target)
 
