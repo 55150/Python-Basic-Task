@@ -6,14 +6,15 @@ def binarySerch(data,Target):
     print(f"Ascending : {data}")
     start = 0
     end = len(data)-1
-    while start <= end:
-        mid = (start+end)/2
+    while start < end:
+        mid = int((start+end)/2)
         if Target > data[mid]:
             start = mid+1
         elif Target < data[mid]:
             end = mid-1
         elif Target == data[mid]:
-            print(f" Your Target Value Index is {mid}")
+            print(f" Your Target Value {Target} Index is {mid}")
+            break
         else:
             print(f" This list does not contain your target. So Return {-1}")
 
