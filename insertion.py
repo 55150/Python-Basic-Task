@@ -34,4 +34,3 @@ print("--------Insertion Sort-------")
 data = [50,20,70,40,30,10,60]
 print(f" Static List : {data}")
 insertionSort(data)
-
